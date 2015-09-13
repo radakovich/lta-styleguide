@@ -1,0 +1,17 @@
+.is-hidden {
+    display: none;
+}
+
+.is-shown-block {
+    display: block;
+}
+
+.is-shown-inline-block {
+    display: inline-block;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

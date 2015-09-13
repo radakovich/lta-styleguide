@@ -1,0 +1,76 @@
+@import 'variables';
+
+.logo-header {
+    padding: 0;
+    @media screen and (min-width: $break-medium) {
+        padding-bottom: 1em;
+        padding-left: 1em;
+    }
+}
+.main-nav-bar {
+    background-color: #4a4a4a;
+
+    @media screen and (min-width: $break-medium) {
+        @extend .clearfix;
+    }
+}
+
+.nav-links-style {
+    text-decoration: none;
+    color: $nav-bar-item-color;
+}
+
+.main-nav-logo {
+    @extend .nav-links-style;
+    float: left;
+}
+
+.main-nav-icon {
+    color: $nav-bar-item-color;
+    float: right;
+    @media screen and (min-width: $break-medium) {
+        display: none;
+    }
+}
+
+.main-nav-links {
+    float: none;
+
+    @media screen and (min-width: $break-medium) {
+        float: right;
+        margin-top: .5em;
+    }
+}
+
+.main-nav-link {
+    @extend .nav-links-style;
+
+    display: block;
+    padding: 1em 2em;
+    border-top: 1px solid;
+
+    @media screen and (min-width: $break-medium) {
+        display: inline-block;
+        border-top: none;
+        padding: 1em;
+    }
+}
+
+.main-nav-link:hover {
+    color: #ffffff;
+}
+
+.logo-icon-wrapper {
+    padding-top: .25em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    @media screen and (min-width: $break-medium) {
+        float: left;
+        padding: 0;
+    }
+    @media screen and (max-width: $break-medium) {
+        @extend .clearfix;
+    }
+}
