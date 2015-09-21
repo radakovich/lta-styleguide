@@ -1,0 +1,21 @@
+@import 'variables';
+
+.hero-image {
+    background-position: center center;
+    background-size: cover;
+    height: 40vh;
+    text-align: center;
+
+    @media screen and (min-width: $break-medium) {
+        height: 60vh;
+    }
+
+    @media screen and (min-width: $break-large) {
+        height: 80vh;
+    }
+}
+
+.hero-image-tagline {
+    padding-top: 10vh;
+    color: #ffffff;
+}
